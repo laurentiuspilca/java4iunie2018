@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="beans.Punct" id="p1">
+		<property name="x" value="10" />
+		<property name="y" value="5" />
+	</bean>
+	
+	<bean class="beans.Cerc">	
+		<property name="centru" ref="p1" />
+		<property name="raza" value="100"/>
+	</bean>
+</beans>
